@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* color: white; */
+    background: url('bg.jpg') center/cover no-repeat;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: rgb(152, 144, 144);
+}
+
+.logo img {
+    width: 15px;
+    filter: invert(1);
+}
+
+main {
+    min-height: 87vh;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 80vw;
+    padding: 20px;
+    background-color: rgb(241, 242, 243);
+    border-radius: 12px;
+    text-align: center;
+    color: black;
+    /* margin-bottom: 50%; */
+    min-height: 90vh;
+
+}
+
+.container h1 {
+    padding: 12px 0;
+}
+.Result {
+    margin: 20px;
+}
+
+#username {
+    min-width: 87%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+
+footer {
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        font-size: 12px;
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+        font-size: 12px;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 15px;
+        filter: invert(1);
+    }
+    #username {
+        width: 90%;
+    }
+
+}
+
